@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color: rgb(115, 196, 240);
-                color:rgb(39, 60, 97);
-               text-align: center; 
-               max-width: 800px;
-               margin: 0 auto; 
-               border: 5px solid;color: rgb(45, 45, 144);
-               page: 16px; 
-            }
-            main{
-                background-color: rgb(188, 234, 242);
-                color: rgb(68, 114, 160);
-                text-align: center;
-                  max-width: 800px;
-               margin: 0 auto;
-               border: 5px solid; color: rgb(42, 55, 81);
-               page: 16px;
-               display: flex;
-            } 
-            img{ width: 80px; 
-                height: 80px;
 
-            }
-            
-           .artigo-autor {
-        font-weight: bold;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: rgb(115, 196, 240);
+            color: rgb(39, 60, 97);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid;
+            color: rgb(45, 45, 144);
+            page: 16px;
+        }
 
-           }
-    
-        </style>
+        main {
+            background-color: rgb(188, 234, 242);
+            color: rgb(68, 114, 160);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            border: 5px solid;
+            color: rgb(42, 55, 81);
+            page: 16px;
+            display: flex;
+        }
 
-    </head>
-    <body> 
-    
-        <header>
-            <h1>Coisas para fazer em dias chuvosos. 🌩️</h1>
-            <p>Nao sabe o que fazer quando o dia esta umido e o tedio te consome por completo? esse site tem a solução!</p>
-        
-        </header>
-        
-        <main>  
-            <img src="image_blog.png" alt="Banner em estilo ilustração de anime mostrando uma jovem de cabelos castanhos sentada perto de uma grande janela de vidro, com expressão entediada enquanto mexe no celular. Do lado de fora, cai uma chuva forte s  obre a cidade. No topo da imagem, há o texto destacado: "COISAS PARA FAZER EM DIAS CHUVOSOS".">
-            <div>
+        img {
+            width: 80px;
+            height: 80px;
+
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Coisas para fazer em dias chuvosos. 🌩️</h1>
+        <p>Nao sabe o que fazer quando o dia esta umido e o tedio te consome por completo? esse site tem a solução!</p>
+
+    </header>
+
+    <main>
+        <img src="image_blog.png"
+            alt="Banner em estilo ilustração de anime mostrando uma jovem de cabelos castanhos sentada perto de uma grande janela de vidro, com expressão entediada enquanto mexe no celular. Do lado de fora, cai uma chuva forte s  obre a cidade. No topo da imagem, há o texto destacado: "
+            COISAS PARA FAZER EM DIAS CHUVOSOS".">
+        <div>
             <h2>Bem vindo(a)!</h2>
             <p>Aqui vou compartilhar com vocês 10 coisas que eu faria em dias chuvosos.</p>
             <p class="artigo-autor">Por: Manuela Oliveira</p>
-    
-         <button>💙<span>0</span>​</button>
-         <button>🐬​<span>0</span>​</button>
 
-            </div> 
-        </main>
+            <button>💙<span>0</span>​</button>
+            <button>🐬​<span>0</span>​</button>
 
-      <body>
+        </div>
+    </main>
 
-   <script>
-   const botao = document.querySelectorAll("main button");
-   botoes.forEach(function)(botao){
-   }
-   botao.addEventListener("click", botaoClicado);
-   function botaoClicado() {
-   console.log("fui clicado");
-   let texto = botao.querySelector("span");
-   texto.textContent++;
-}
+    <body>
 
-</script>
-    
+        <script>
+            const botoes = document.querySelectorAll("main button");
+            botoes.forEach(function(botao){
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado() {
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                texto.textContent++;
+            }});
+
+        </script>
+
 </html>
